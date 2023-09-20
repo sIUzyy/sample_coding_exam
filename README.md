@@ -1,2 +1,3 @@
-# coding-exam
-sample-coding-exam
+coding-exam-sample in javascript:
+
+1. reverse string 
