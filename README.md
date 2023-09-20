@@ -1,4 +1,6 @@
 coding-exam-sample in javascript:
 
-1. reverse string
-2. isPalindrome
+<ul>
+  <li>reverse string</li>
+  <li>isPalindrome</li>
+</ul>
