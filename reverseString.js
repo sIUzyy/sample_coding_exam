@@ -1,3 +1,7 @@
+// 1. turn the string into array
+// 2. reverse it using 'reverse' function in javascript
+// 3. back to string
+
 //first appproach 
 function reverse (string) {
     //first we split the string into an array, then reverse it using js function, after that we join them together.
@@ -6,6 +10,9 @@ function reverse (string) {
 const output = reverse('hello') //called the function and pass down 'hello' value in parameter
 console.log(output) //display the output
 
+
+// 1.initialized reversed
+// 2.loop through string
 
 //second approach
 function reverse (string) {
