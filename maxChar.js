@@ -1,3 +1,12 @@
+// 1. initialize an object
+// 2. loop through string
+// 3. check if the string does not exist in object, if yes set the object to 1
+// 4. check if it does exist, if yes do an increment
+// 5. initialize a variable to track how many times it appears
+// 6. initialize a variable to track what character that appear most of a time
+// 7. loop in object
+// 8. check if object is greater or equal to maximum number, if yes set the maximum number equal to object, if yes set the character to variable you loop in
+
 function maxChar (str) {
     let obj = {} //initializes an empty object, this is where the 'str' stored.
     
