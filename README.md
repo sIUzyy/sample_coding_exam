@@ -4,4 +4,5 @@ coding-exam-sample in javascript:
   <li>reverse string</li>
   <li>isPalindrome</li>
   <li>maxChar</li>
+  <li>reverse int</li>
 </ul>
