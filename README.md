@@ -5,4 +5,5 @@ coding-exam-sample in javascript:
   <li>isPalindrome</li>
   <li>maxChar</li>
   <li>reverse int</li>
+  <li>fizzbuzz</li>
 </ul>
