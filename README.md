@@ -6,4 +6,5 @@ coding-exam-sample in javascript:
   <li>maxChar</li>
   <li>reverse int</li>
   <li>fizzbuzz</li>
+  <li>evenOdd</li>
 </ul>
