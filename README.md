@@ -7,4 +7,5 @@ coding-exam-sample in javascript:
   <li>reverse int</li>
   <li>fizzbuzz</li>
   <li>evenOdd</li>
+  <li>chunkedArray</li>
 </ul>
