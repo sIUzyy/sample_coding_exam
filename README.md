@@ -8,4 +8,5 @@ coding-exam-sample in javascript:
   <li>fizzbuzz</li>
   <li>evenOdd</li>
   <li>chunkedArray</li>
+  <li>IsUnique</li>
 </ul>
