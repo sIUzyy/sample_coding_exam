@@ -9,4 +9,6 @@ coding-exam-sample in javascript:
   <li>evenOdd</li>
   <li>chunkedArray</li>
   <li>IsUnique</li>
+  <li>IsAnagram</li>
+
 </ul>
