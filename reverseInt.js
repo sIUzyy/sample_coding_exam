@@ -34,6 +34,15 @@ console.log({
   testcase4: reverseInt(-900),
 })
 
+// METHOD 02
+function reverseInt(n){
+    // int to string, convert to array, reverse, then back to string.
+    const reversed = n.toString().split("").reverse().join("")
+    
+    // string to int, math.sign is for positive or negative.
+    return parseInt(reversed) * Math.sign(n)
+}
+
 
 
 
