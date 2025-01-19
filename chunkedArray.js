@@ -11,33 +11,27 @@
 // 3. check if the last exist OR size last equals to n. If it does exist, then push into "chunked". Else, push into "last".
 // 4. return "chunked"
 
-function chunk (arr, n) {
-
-    //create an array called "chunked" = []
+function chunk (array, size) {
+    // empty array
     const chunked = []
-
-    //iterate through each element 'elem' in the input array 'arr'. '[1,4,12,3,2,6,-9,0]' will iterate here.
-    for(let elem of arr){
-
-    //get the last chunked array within last "chunked". chunked.length gives the total number of elements.
-    let last = chunked[chunked.length - 1] // By subtracting 1 from the length, we are effectively getting the index of the last element in the array.
-
-    //check if the last exist OR size last equals to n
-    if(!last || last.length === n)
-      //If it does exist, then push into "chunked"
-      chunked.push([elem]) //create new array with a single element. Then, adds this newly created array as an element to the chunked array
-    else
-      //Else, push into "last".
-      // In simpler terms, if last is, for example, the subarray [1, 2, 3], and elem is the number '4', 
-      // then last.push(elem) would modify last to become [1, 2, 3, 4]. 
-      // It adds 4 to the end of the subarray.
-      last.push(elem)
-
+    
+    // idx
+    let index = 0
+    
+    // if index is less than to length of array
+    while(index < array.length) {
+        // slice the array from index to index + size
+        const chunk = array.slice(index, index + size)
+        
+        // push the chunk to empty array chunked
+        chunked.push(chunk)
+        
+        // update the index with new value
+        index += size
     }
-   
-    // return "chunked"
+    
     return chunked
-
 }
 
-console.log(chunk([1,4,12,3,2,6,-9,0], 4))
+const result = chunk([1,2,3,4,5,6,7,8], 3) // [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8 ] ]
+console.log(result)
