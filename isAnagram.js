@@ -68,3 +68,26 @@ console.log({
 
 // example a, c ; output: false
 // explanation: apart from they are different words, the character of each words is not equal to each other.
+
+
+// anagram is a word or phrase formed by re-arranging the letters of another word or phrase. for example "listen" is an anagram of "silent"
+
+function isAnagram(str1, str2){
+    
+    // first convert the string to lowercase
+    // second remove all spaces by using replace
+    str1 = str1.toLowerCase().replace(/\s/g, '')
+    str2 = str2.toLowerCase().replace(/\s/g, '') // "\s" regex char that matches any whitespace including space, tab, newlines, etc. "g" means all matches, global flag.
+    
+    // third turn the strings to array using split, sort it to arrange alphabetically, then back to string using join.
+    const sortedStr1 = str1.split("").sort().join("")
+    const sortedStr2 = str2.split("").sort().join("")
+    
+    // check if they are the same.
+    return sortedStr1 === sortedStr2
+   
+}
+
+console.log(isAnagram("listen", "silent")); // true
+console.log(isAnagram("hello", "world"));  // false
+
